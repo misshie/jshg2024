@@ -1,0 +1,4 @@
+#fam	indv	paternal	maternal	sex	uffected
+dummy	NGSK-IRUD-24-9999	NGSK-IRUD-24-9999Father	NGSK-IRUD-24-9999Mother	1	2
+dummy	NGSK-IRUD-24-9999Father	0	0	1	1
+dummy	NGSK-IRUD-24-9999Mother	0	0	2	1
