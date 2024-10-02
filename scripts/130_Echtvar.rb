@@ -1,16 +1,15 @@
-#!/usr/bin/env ruby
+#!/usr
+/bin/env ruby
 require 'optparse'
 
 class Klass
-  #ECHTVAR = "/xcatopt/Echtvar-v0.2.0/echtvar"
-  ECHTVAR = "/xcatopt/Echtvar-v0.1.9/echtvar"
-  #EVDIR = "/peta/hotel/share/PublicDatasets/Echtvar-202405-hg38"
+  ECHTVAR = "/xcatopt/Echtvar-v0.2.0/echtvar"
   EVDIR = "/peta/hotel/share/PublicDatasets/Echtvar-202312-hg38"
   EV_Tommo54kjpn    = "tommo54kjpn.echtvar.zip"
   EV_ClinVar        = "clinvar.echtvar.zip"
   EV_dbSNP          = "dbsnp.echtvar.zip"
   EV_SpliceAI_SNV   = "spliceai_snv.echtvar.zip"
-  # EV_SpliceAI_INDEL = "spliceai_indel.echtvar.zip"
+  EV_SpliceAI_INDEL = "spliceai_indel.echtvar.zip"
   EV_AlphaMissense  = "alphamissense.echtvar.zip"
   EV_GNOMAD         = "gnomad4.echtvar.zip"
   TEMP = "__TEMP__"
@@ -34,7 +33,7 @@ class Klass
       cmd << "-e #{EVDIR}/#{EV_dbSNP}"
       cmd << "-e #{EVDIR}/#{EV_ClinVar}"
       cmd << "-e #{EVDIR}/#{EV_SpliceAI_SNV}"
-      #cmd << "-e #{EVDIR}/#{EV_SpliceAI_INDEL}"
+      cmd << "-e #{EVDIR}/#{EV_SpliceAI_INDEL}"
       #cmd << "-e #{EVDIR}/#{EV_AlphaMissense}"
       cmd << vcf
       cmd << "#{bcfout}#{TEMP}"
