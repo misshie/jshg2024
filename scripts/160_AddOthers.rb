@@ -3,7 +3,7 @@ require 'optparse'
 
 class Klass
   OUTD = "./"
-  BCFTOOLS = "/xcatopt/bcftools-1.19/bcftools"
+  BCFTOOLS = GCconfig::BCFTOOLS
   TEMPSUFF = "__TEMP__"
 
   BED_CYTOBAND = "/peta/fserv/share/PublicDatasets/UCSC_hg38/cytoBand-canonical.bed.gz"

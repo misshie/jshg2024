@@ -6,7 +6,7 @@ class Klass
   OUTD = "./"
   OUTSUFFIX  = GConfig::SSFilter_OutSuffix  # rare / loose
   JAR = "/xcatopt/snpEff-5.1/SnpSift.jar"
-  BCFTOOLS = "/xcatopt/bcftools-1.18/bcftools"
+  BCFTOOLS = GCconfig::BCFTOOLS
   TEMPSUFF = "__TEMP__"
   attr_reader :opts
 

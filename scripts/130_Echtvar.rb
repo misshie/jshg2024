@@ -1,10 +1,10 @@
-#!/usr
-/bin/env ruby
+#!/usr/bin/env ruby
 require 'optparse'
+require "./00config.rb"
 
 class Klass
-  ECHTVAR = "/xcatopt/Echtvar-v0.2.0/echtvar"
-  EVDIR = "/peta/hotel/share/PublicDatasets/Echtvar-202312-hg38"
+  ECHTVAR = GConfig::ECHTVAR
+  EVDIR   = GConfig::ECHTVAR_DIR
   EV_Tommo54kjpn    = "tommo54kjpn.echtvar.zip"
   EV_ClinVar        = "clinvar.echtvar.zip"
   EV_dbSNP          = "dbsnp.echtvar.zip"

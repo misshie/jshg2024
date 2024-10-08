@@ -11,7 +11,7 @@ class Klass
   OMIM_VERSION = "20240414"
   OMIM = "/peta/fserv/share/NGS/PublicDatasets/OMIM#{OMIM_VERSION}/genemap2.txt"
 
-  BCFTOOLS = "/xcatopt/bcftools-1.18/bcftools"
+  BCFTOOLS = GCconfig::BCFTOOLS
   HEADERS =
     [%!##INFO=<ID=OMIM_MIM,Number=1,Type=Integer,Description="OMIM MIM ID",Version="#{OMIM_VERSION}">!,
      %!##INFO=<ID=OMIM_GeneSym,Number=1,Type=String,Description="OMIM gene symbol",Version="#{OMIM_VERSION}">!,
@@ -28,7 +28,7 @@ class Klass
   ANN = "ANN="
   ANNGENE_IDX = 3
   attr_reader :opts, :omimgene
-  
+
   def initialize(opts)
     @opts = opts
   end

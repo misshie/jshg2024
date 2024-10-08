@@ -9,7 +9,7 @@ class Klass
   OUTSUFFIX2 = GConfig::SSFilter_OutSuffix2 # "condB"
   JAR = "/xcatopt/snpEff-5.1/SnpSift.jar"
   # prepare: sudo update-java-alternatives -s java-1.11.0-openjdk-amd64
-  BCFTOOLS = "/xcatopt/bcftools-1.19/bcftools"
+  BCFTOOLS = GCconfig::BCFTOOLS
   OPLINE ="/xcatopt/snpEff-5.1/scripts/vcfEffOnePerLine.pl"
   TEMPSUFF = "__TEMP__"
 

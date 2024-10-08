@@ -8,11 +8,10 @@ class Klass
   VCFOUT = "#{PROJ}.norm.snpeff.vcf.gz"
   LOG    = "#{PROJ}.norm.snpeff.vcf.log"
   SNPEFF_SUMMARY = "#{PROJ}.norm.snpeff.vcf.snpEff_summary.html"
-
-  SNPEFF   = "/xcatopt/snpEff-5.1/snpEff.jar"
+  SNPEFF   = GConfig::SNPEFF
   DATABASE = "hg38decoy.gencode39"
   JAVAOPT  = "-Xmx32g"
-  BCFTOOLS = "/xcatopt/bcftools-1.19/bcftools"
+  BCFTOOLS = GCconfig::BCFTOOLS
   THREADS  = 32
 
   attr_reader :opts

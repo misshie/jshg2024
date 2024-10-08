@@ -7,7 +7,7 @@ class Klass
   OUTPUTBCF = "#{GConfig::FamName}.norm.bcf"
   SAMPLESTXT = GConfig::SamplesTxt
 
-  BCFTOOLS = "/xcatopt/bcftools-1.19/bcftools"
+  BCFTOOLS = GCconfig::BCFTOOLS
   THREADS = 32
 
   attr_reader :opts

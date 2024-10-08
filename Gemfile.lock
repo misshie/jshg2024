@@ -1,0 +1,23 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    caxlsx (4.1.0)
+      htmlentities (~> 4.3, >= 4.3.4)
+      marcel (~> 1.0)
+      nokogiri (~> 1.10, >= 1.10.4)
+      rubyzip (>= 1.3.0, < 3)
+    htmlentities (4.3.4)
+    marcel (1.0.4)
+    nokogiri (1.16.5-x86_64-linux)
+      racc (~> 1.4)
+    racc (1.7.3)
+    rubyzip (2.3.2)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  caxlsx
+
+BUNDLED WITH
+   2.5.21

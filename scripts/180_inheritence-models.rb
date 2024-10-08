@@ -7,7 +7,7 @@ class Klass
   MAX_MAF = GConfig::SSFilter_MaxMAF
   OUTSUFFIX  = GConfig::SSFilter_OutSuffix  # rare / loose
   OUTSUFFIX2 = GConfig::SSFilter_OutSuffix2 # condC
-  BCFTOOLS = "/xcatopt/bcftools-1.19/bcftools"
+  BCFTOOLS = GCconfig::BCFTOOLS
   OPLINE ="/xcatopt/snpEff-5.1/scripts/vcfEffOnePerLine.pl"
   TEMPSUFF = "__TEMP__"
   HEAD_PARENTAL_DESC = "parental transmission of child's alleles (PAT/MAT, hom/het, question)"

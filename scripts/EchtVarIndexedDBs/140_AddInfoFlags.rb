@@ -3,7 +3,7 @@ require 'optparse'
 
 class Klass
   OUTD = "./"
-  BCFTOOLS = "/xcatopt/bcftools-1.18/bcftools"
+  BCFTOOLS = GCconfig::BCFTOOLS
   TEMPSUFF = "__TEMP__"
 
   SAI  = "SpliceAI"
